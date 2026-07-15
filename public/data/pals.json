@@ -1,0 +1,2481 @@
+[
+  {
+    "id": "solmora-lux",
+    "name": "Solmora Lux",
+    "elements": [
+      "Water",
+      "Electric"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "souffline",
+    "name": "Souffline",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "depresso",
+    "name": "Depresso",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "astralym",
+    "name": "Astralym",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "panthalus",
+    "name": "Panthalus",
+    "elements": [
+      "Water"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "aegidron",
+    "name": "Aegidron",
+    "elements": [
+      "Dragon",
+      "Neutral"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "shaolong",
+    "name": "Shaolong",
+    "elements": [
+      "Dragon",
+      "Water"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "bastigor",
+    "name": "Bastigor",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "dandilord",
+    "name": "Dandilord",
+    "elements": [
+      "Grass",
+      "Dark"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "jetragon",
+    "name": "Jetragon",
+    "elements": [
+      "Dragon"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "silvance",
+    "name": "Silvance",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "hartalis",
+    "name": "Hartalis",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "blazamut-ryu",
+    "name": "Blazamut Ryu",
+    "elements": [
+      "Dragon",
+      "Fire"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "frostallion-noct",
+    "name": "Frostallion Noct",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "orserk",
+    "name": "Orserk",
+    "elements": [
+      "Dragon",
+      "Electric"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "bellanoir-libero",
+    "name": "Bellanoir Libero",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "eidrolon-ignis",
+    "name": "Eidrolon Ignis",
+    "elements": [
+      "Dragon",
+      "Fire"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "frostallion",
+    "name": "Frostallion",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "neptilius",
+    "name": "Neptilius",
+    "elements": [
+      "Water"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "jormuntide-ignis",
+    "name": "Jormuntide Ignis",
+    "elements": [
+      "Dragon",
+      "Fire"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "paladius",
+    "name": "Paladius",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "necromus",
+    "name": "Necromus",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "tetroise-primo",
+    "name": "Tetroise Primo",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "knocklem-ignis",
+    "name": "Knocklem Ignis",
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "lyleen-noct",
+    "name": "Lyleen Noct",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "ophydia",
+    "name": "Ophydia",
+    "elements": [
+      "Grass",
+      "Water"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "lyleen",
+    "name": "Lyleen",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "dualith-noct",
+    "name": "Dualith Noct",
+    "elements": [
+      "Neutral",
+      "Dark"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "knocklem",
+    "name": "Knocklem",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "celesdir-noct",
+    "name": "Celesdir Noct",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "solenne",
+    "name": "Solenne",
+    "elements": [
+      "Dark",
+      "Neutral"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "renjishi",
+    "name": "Renjishi",
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "eidrolon",
+    "name": "Eidrolon",
+    "elements": [
+      "Dragon",
+      "Dark"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "selyne",
+    "name": "Selyne",
+    "elements": [
+      "Dark",
+      "Neutral"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "whalaska-ignis",
+    "name": "Whalaska Ignis",
+    "elements": [
+      "Ice",
+      "Fire"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "moldron-cryst",
+    "name": "Moldron Cryst",
+    "elements": [
+      "Ice",
+      "Neutral"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "flaracle",
+    "name": "Flaracle",
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "xenolord",
+    "name": "Xenolord",
+    "elements": [
+      "Dark",
+      "Dragon"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "blazamut",
+    "name": "Blazamut",
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "azurmane",
+    "name": "Azurmane",
+    "elements": [
+      "Electric"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "starryon-primo",
+    "name": "Starryon Primo",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "elgrove-cryst",
+    "name": "Elgrove Cryst",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "faleris-aqua",
+    "name": "Faleris Aqua",
+    "elements": [
+      "Water"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "pierdon-cryst",
+    "name": "Pierdon Cryst",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "cryolinx-terra",
+    "name": "Cryolinx Terra",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "anubis",
+    "name": "Anubis",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "astegon",
+    "name": "Astegon",
+    "elements": [
+      "Dragon",
+      "Dark"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "faleris",
+    "name": "Faleris",
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "dualith",
+    "name": "Dualith",
+    "elements": [
+      "Neutral",
+      "Grass"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "dupin",
+    "name": "Dupin",
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "roujay",
+    "name": "Roujay",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "univolt-cryst",
+    "name": "Univolt Cryst",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "shadowbeak",
+    "name": "Shadowbeak",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "silvegis",
+    "name": "Silvegis",
+    "elements": [
+      "Dragon"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "celesdir",
+    "name": "Celesdir",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "beakon-cryst",
+    "name": "Beakon Cryst",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "jormuntide",
+    "name": "Jormuntide",
+    "elements": [
+      "Dragon",
+      "Water"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "reptyro-cryst",
+    "name": "Reptyro Cryst",
+    "elements": [
+      "Ice",
+      "Neutral"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "wumpo-botan",
+    "name": "Wumpo Botan",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "bellanoir",
+    "name": "Bellanoir",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "warsect-terra",
+    "name": "Warsect Terra",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "menasting-terra",
+    "name": "Menasting Terra",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "sibelyx-primo",
+    "name": "Sibelyx Primo",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "whalaska",
+    "name": "Whalaska",
+    "elements": [
+      "Ice",
+      "Water"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "ghangler-ignis",
+    "name": "Ghangler Ignis",
+    "elements": [
+      "Fire",
+      "Water"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "gildane",
+    "name": "Gildane",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "suzaku-aqua",
+    "name": "Suzaku Aqua",
+    "elements": [
+      "Water"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "moldron",
+    "name": "Moldron",
+    "elements": [
+      "Fire",
+      "Neutral"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "mycora",
+    "name": "Mycora",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "relaxaurus-lux",
+    "name": "Relaxaurus Lux",
+    "elements": [
+      "Dragon",
+      "Electric"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "splatterina",
+    "name": "Splatterina",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "tetroise",
+    "name": "Tetroise ",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "kitsun-noct",
+    "name": "Kitsun Noct",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "lapure",
+    "name": "Lapure",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "petallia-ignis",
+    "name": "Petallia Ignis",
+    "elements": [
+      "Grass",
+      "Fire"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "wumpo",
+    "name": "Wumpo",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "bushi-noct",
+    "name": "Bushi Noct",
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "prixter-lux",
+    "name": "Prixter Lux",
+    "elements": [
+      "Electric",
+      "Neutral"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "frostplume",
+    "name": "Frostplume",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "sekhmet",
+    "name": "Sekhmet",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "ghangler",
+    "name": "Ghangler",
+    "elements": [
+      "Dark",
+      "Water"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "loomen",
+    "name": "Loomen",
+    "elements": [
+      "Dark",
+      "Fire"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "fenglope-lux",
+    "name": "Fenglope Lux",
+    "elements": [
+      "Electric"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "helzephyr-lux",
+    "name": "Helzephyr Lux",
+    "elements": [
+      "Dark",
+      "Electric"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "venusa",
+    "name": "Venusa",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "sootseer",
+    "name": "Sootseer",
+    "elements": [
+      "Dark",
+      "Fire"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "xenogard",
+    "name": "Xenogard",
+    "elements": [
+      "Dragon"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "majex",
+    "name": "Majex",
+    "elements": [
+      "Dark",
+      "Fire"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "grizzbolt",
+    "name": "Grizzbolt",
+    "elements": [
+      "Electric"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "braloha",
+    "name": "Braloha",
+    "elements": [
+      "Grass",
+      "Neutral"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "cryolinx",
+    "name": "Cryolinx",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "ragnahawk",
+    "name": "Ragnahawk",
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "reptyro",
+    "name": "Reptyro",
+    "elements": [
+      "Fire",
+      "Neutral"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "mammorest-cryst",
+    "name": "Mammorest Cryst",
+    "elements": [
+      "Ice",
+      "Neutral"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "broncherry-aqua",
+    "name": "Broncherry Aqua",
+    "elements": [
+      "Grass",
+      "Water"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "relaxaurus",
+    "name": "Relaxaurus",
+    "elements": [
+      "Dragon",
+      "Water"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "polapup-terra",
+    "name": "Polapup Terra",
+    "elements": [
+      "Ice",
+      "Neutral"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "pierdon",
+    "name": "Pierdon",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "menasting",
+    "name": "Menasting",
+    "elements": [
+      "Dark",
+      "Neutral"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "helzephyr",
+    "name": "Helzephyr",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "omascul",
+    "name": "Omascul",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "starryon",
+    "name": "Starryon",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "verdash",
+    "name": "Verdash",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "gildra",
+    "name": "Gildra",
+    "elements": [
+      "Dark",
+      "Neutral"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "wistella",
+    "name": "Wistella",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "bulldosu",
+    "name": "Bulldosu",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "suzaku",
+    "name": "Suzaku",
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "quivern",
+    "name": "Quivern",
+    "elements": [
+      "Dragon"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "azurobe-cryst",
+    "name": "Azurobe Cryst",
+    "elements": [
+      "Ice",
+      "Dragon"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "nitemary",
+    "name": "Nitemary",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "palumba",
+    "name": "Palumba",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "nyafia",
+    "name": "Nyafia",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "icelyn",
+    "name": "Icelyn",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "blazehowl-noct",
+    "name": "Blazehowl Noct",
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "warsect",
+    "name": "Warsect",
+    "elements": [
+      "Neutral",
+      "Grass"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "loupmoon-cryst",
+    "name": "Loupmoon Cryst",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "quivern-botan",
+    "name": "Quivern Botan",
+    "elements": [
+      "Dragon",
+      "Grass"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "incineram-noct",
+    "name": "Incineram Noct",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "nitemary-botan",
+    "name": "Nitemary Botan",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "turtacle-terra",
+    "name": "Turtacle Terra",
+    "elements": [
+      "Water",
+      "Neutral"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "mammorest",
+    "name": "Mammorest",
+    "elements": [
+      "Grass",
+      "Neutral"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "tropicaw",
+    "name": "Tropicaw",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "blazehowl",
+    "name": "Blazehowl",
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "solmora",
+    "name": "Solmora",
+    "elements": [
+      "Water"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "broncherry",
+    "name": "Broncherry",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "prunelia",
+    "name": "Prunelia",
+    "elements": [
+      "Grass",
+      "Dark"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "dynamoff",
+    "name": "Dynamoff",
+    "elements": [
+      "Electric"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "leafan",
+    "name": "Leafan",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "skutlass",
+    "name": "Skutlass",
+    "elements": [
+      "Water"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "vanwyrm-cryst",
+    "name": "Vanwyrm Cryst",
+    "elements": [
+      "Ice",
+      "Dark"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "mossanda-lux",
+    "name": "Mossanda Lux",
+    "elements": [
+      "Electric"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "shroomer-noct",
+    "name": "Shroomer Noct",
+    "elements": [
+      "Grass",
+      "Dark"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "dogen",
+    "name": "Dogen",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "incineram",
+    "name": "Incineram",
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "vaelet",
+    "name": "Vaelet",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "wixen-noct",
+    "name": "Wixen Noct",
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "snock-lux",
+    "name": "Snock Lux",
+    "elements": [
+      "Electric",
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "prixter",
+    "name": "Prixter",
+    "elements": [
+      "Dark",
+      "Neutral"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "shroomer",
+    "name": "Shroomer",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "kingpaca-cryst",
+    "name": "Kingpaca Cryst",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "bakemi",
+    "name": "Bakemi",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "digtoise",
+    "name": "Digtoise",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "bushi",
+    "name": "Bushi",
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "felbat",
+    "name": "Felbat",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "needoll-noct",
+    "name": "Needoll Noct",
+    "elements": [
+      "Dark",
+      "Grass"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "skutlass-ignis",
+    "name": "Skutlass Ignis",
+    "elements": [
+      "Water",
+      "Fire"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "rayhound-cryst",
+    "name": "Rayhound Cryst",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "smokie-cryst",
+    "name": "Smokie Cryst",
+    "elements": [
+      "Dark",
+      "Ice"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "dumud-gild",
+    "name": "Dumud Gild",
+    "elements": [
+      "Neutral",
+      "Water"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "gloopie-primo",
+    "name": "Gloopie Primo",
+    "elements": [
+      "Water",
+      "Neutral"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "elphidran-aqua",
+    "name": "Elphidran Aqua",
+    "elements": [
+      "Dragon",
+      "Water"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "vanwyrm",
+    "name": "Vanwyrm",
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "polapup",
+    "name": "Polapup",
+    "elements": [
+      "Ice",
+      "Water"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "kitsun",
+    "name": "Kitsun",
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "lapiron",
+    "name": "Lapiron",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "beakon",
+    "name": "Beakon",
+    "elements": [
+      "Electric"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "carnibora",
+    "name": "Carnibora",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "maraith",
+    "name": "Maraith",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "petallia",
+    "name": "Petallia",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "tarantriss",
+    "name": "Tarantriss",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "mimog",
+    "name": "Mimog",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "slowatt",
+    "name": "Slowatt",
+    "elements": [
+      "Electric"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "smokie",
+    "name": "Smokie",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "hoodle",
+    "name": "Hoodle",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "snock",
+    "name": "Snock",
+    "elements": [
+      "Electric"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "elizabee",
+    "name": "Elizabee",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "katress-ignis",
+    "name": "Katress Ignis",
+    "elements": [
+      "Dark",
+      "Fire"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "sibelyx",
+    "name": "Sibelyx",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "xenovader",
+    "name": "Xenovader",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "azurobe",
+    "name": "Azurobe",
+    "elements": [
+      "Water",
+      "Dragon"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "surfent-terra",
+    "name": "Surfent Terra",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "penking-lux",
+    "name": "Penking Lux",
+    "elements": [
+      "Water",
+      "Electric"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "croajiro-noct",
+    "name": "Croajiro Noct",
+    "elements": [
+      "Water",
+      "Dark"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "pyrin-noct",
+    "name": "Pyrin Noct",
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "gorirat-terra",
+    "name": "Gorirat Terra",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "dinossom-lux",
+    "name": "Dinossom Lux",
+    "elements": [
+      "Electric",
+      "Dragon"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "valentail",
+    "name": "Valentail",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "dazzi-noct",
+    "name": "Dazzi Noct",
+    "elements": [
+      "Dark",
+      "Electric"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "rayhound",
+    "name": "Rayhound",
+    "elements": [
+      "Electric"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "reindrix",
+    "name": "Reindrix",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "caprity-noct",
+    "name": "Caprity Noct",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "chillet-ignis",
+    "name": "Chillet Ignis",
+    "elements": [
+      "Fire",
+      "Dragon"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "fenglope",
+    "name": "Fenglope",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "foxcicle",
+    "name": "Foxcicle",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "pyrin",
+    "name": "Pyrin",
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "lullu",
+    "name": "Lullu",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "lunaris",
+    "name": "Lunaris",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "elgrove",
+    "name": "Elgrove",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "woolipop-terra",
+    "name": "Woolipop Terra",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "katress",
+    "name": "Katress",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "robinquill-terra",
+    "name": "Robinquill Terra",
+    "elements": [
+      "Grass",
+      "Neutral"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "mossanda",
+    "name": "Mossanda",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "penking",
+    "name": "Penking",
+    "elements": [
+      "Water",
+      "Ice"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "wixen",
+    "name": "Wixen",
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "lovander",
+    "name": "Lovander",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "dinossom",
+    "name": "Dinossom",
+    "elements": [
+      "Grass",
+      "Dragon"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "loupmoon",
+    "name": "Loupmoon",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "grintale",
+    "name": "Grintale",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "munchill",
+    "name": "Munchill",
+    "elements": [
+      "Ice",
+      "Water"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "gorirat",
+    "name": "Gorirat",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "sweepa",
+    "name": "Sweepa",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "dazemu",
+    "name": "Dazemu",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "kingpaca",
+    "name": "Kingpaca",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "epic"
+  },
+  {
+    "id": "yakumo",
+    "name": "Yakumo",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "finsider-ignis",
+    "name": "Finsider Ignis",
+    "elements": [
+      "Water",
+      "Fire"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "wispaw",
+    "name": "Wispaw",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "robinquill",
+    "name": "Robinquill",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "univolt",
+    "name": "Univolt",
+    "elements": [
+      "Electric"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "elphidran",
+    "name": "Elphidran",
+    "elements": [
+      "Dragon"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "dumud",
+    "name": "Dumud",
+    "elements": [
+      "Neutral",
+      "Water"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "fuack-ignis",
+    "name": "Fuack Ignis",
+    "elements": [
+      "Water",
+      "Fire"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "kikit",
+    "name": "Kikit",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "arsox",
+    "name": "Arsox",
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "chillet",
+    "name": "Chillet",
+    "elements": [
+      "Ice",
+      "Dragon"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "tombat",
+    "name": "Tombat",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "beegarde",
+    "name": "Beegarde",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "puffolt",
+    "name": "Puffolt",
+    "elements": [
+      "Electric"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "cawgnito",
+    "name": "Cawgnito",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "celaray-lux",
+    "name": "Celaray Lux",
+    "elements": [
+      "Water",
+      "Electric"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "snugloo",
+    "name": "Snugloo",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "dazzi",
+    "name": "Dazzi",
+    "elements": [
+      "Electric"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "turtacle",
+    "name": "Turtacle",
+    "elements": [
+      "Water"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "needoll",
+    "name": "Needoll",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "gobfin-ignis",
+    "name": "Gobfin Ignis",
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "surfent",
+    "name": "Surfent",
+    "elements": [
+      "Water"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "finsider",
+    "name": "Finsider",
+    "elements": [
+      "Water"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "ribbuny-botan",
+    "name": "Ribbuny Botan",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "kelpsea-ignis",
+    "name": "Kelpsea Ignis",
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "muffly",
+    "name": "Muffly",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "pengullet-lux",
+    "name": "Pengullet Lux",
+    "elements": [
+      "Water",
+      "Electric"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "foxparks-cryst",
+    "name": "Foxparks Cryst",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "hangyu-cryst",
+    "name": "Hangyu Cryst",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "amione",
+    "name": "Amione",
+    "elements": [
+      "Water"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "gloopie",
+    "name": "Gloopie",
+    "elements": [
+      "Water",
+      "Dark"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "killamari-primo",
+    "name": "Killamari Primo",
+    "elements": [
+      "Neutral",
+      "Water"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "gobfin",
+    "name": "Gobfin",
+    "elements": [
+      "Water"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "nitewing",
+    "name": "Nitewing",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "galeclaw",
+    "name": "Galeclaw",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "eikthyrdeer-terra",
+    "name": "Eikthyrdeer Terra",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "jellroy",
+    "name": "Jellroy",
+    "elements": [
+      "Water",
+      "Dark"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "croajiro",
+    "name": "Croajiro",
+    "elements": [
+      "Water"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "caprity",
+    "name": "Caprity",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "cinnamoth",
+    "name": "Cinnamoth",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "herbil",
+    "name": "Herbil",
+    "elements": [
+      "Grass",
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "leezpunk-ignis",
+    "name": "Leezpunk Ignis",
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "jelliette",
+    "name": "Jelliette",
+    "elements": [
+      "Water"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "flopie",
+    "name": "Flopie",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "leezpunk",
+    "name": "Leezpunk",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "direhowl",
+    "name": "Direhowl",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "bristla",
+    "name": "Bristla",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "flambelle",
+    "name": "Flambelle",
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "eikthyrdeer",
+    "name": "Eikthyrdeer",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "melpaca",
+    "name": "Melpaca",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "tocotoco",
+    "name": "Tocotoco",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "celaray",
+    "name": "Celaray",
+    "elements": [
+      "Water"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "mau-cryst",
+    "name": "Mau Cryst",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "cattiva",
+    "name": "Cattiva",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "killamari",
+    "name": "Killamari",
+    "elements": [
+      "Dark",
+      "Water"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "hangyu",
+    "name": "Hangyu",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "fuddler",
+    "name": "Fuddler",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "mozzarina",
+    "name": "Mozzarina",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "kelpsea",
+    "name": "Kelpsea",
+    "elements": [
+      "Water"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "woolipop",
+    "name": "Woolipop",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "tanzee-ignis",
+    "name": "Tanzee Ignis",
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "swee",
+    "name": "Swee",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "jolthog-cryst",
+    "name": "Jolthog Cryst",
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "ribbuny",
+    "name": "Ribbuny",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "rooby",
+    "name": "Rooby",
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "rushoar",
+    "name": "Rushoar",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "cremis",
+    "name": "Cremis",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "tanzee",
+    "name": "Tanzee",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "daedream",
+    "name": "Daedream",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "nox",
+    "name": "Nox",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "pupperai",
+    "name": "Pupperai",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "hoocrates",
+    "name": "Hoocrates",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "gumoss",
+    "name": "Gumoss",
+    "elements": [
+      "Grass",
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "pengullet",
+    "name": "Pengullet",
+    "elements": [
+      "Water",
+      "Ice"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "clovee",
+    "name": "Clovee",
+    "elements": [
+      "Grass",
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "fuack",
+    "name": "Fuack",
+    "elements": [
+      "Water"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "foxparks",
+    "name": "Foxparks",
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "sparkit",
+    "name": "Sparkit",
+    "elements": [
+      "Electric"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "lifmunk",
+    "name": "Lifmunk",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "jolthog",
+    "name": "Jolthog",
+    "elements": [
+      "Electric"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "mau",
+    "name": "Mau",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "lamball",
+    "name": "Lamball",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "vixy",
+    "name": "Vixy",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "teafant",
+    "name": "Teafant",
+    "elements": [
+      "Water"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "chikipi",
+    "name": "Chikipi",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "blue-slime",
+    "name": "Blue Slime",
+    "elements": [
+      "Water"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "cave-bat",
+    "name": "Cave Bat",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "demon-eye",
+    "name": "Demon Eye",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "enchanted-sword",
+    "name": "Enchanted Sword",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "eye-of-cthulhu",
+    "name": "Eye of Cthulhu",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "id": "green-slime",
+    "name": "Green Slime",
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "illuminant-bat",
+    "name": "Illuminant Bat",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "illuminant-slime",
+    "name": "Illuminant Slime",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "purple-slime",
+    "name": "Purple Slime",
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "common"
+  },
+  {
+    "id": "rainbow-slime",
+    "name": "Rainbow Slime",
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "id": "red-slime",
+    "name": "Red Slime",
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "common"
+  }
+]

@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-cream: #F9F6F1;
+  --bg-paper: #FFFFFF;
+  --text-ink: #1A1D23;
+  --text-stone: #5E6470;
+  --brand-forest: #2D5A3D;
+  --brand-amber: #D97706;
+  --brand-terra: #C15A3D;
+  --border-sand: #DCD6CC;
+  --bg-mist: #F0EBE3;
+}
+
+@layer base {
+  body {
+    @apply bg-cream text-ink;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+  ::selection {
+    @apply bg-forest/20;
+  }
+}
+
+@layer utilities {
+  .prose-legal a {
+    @apply text-terra underline underline-offset-4;
+  }
+  .prose-legal h2 {
+    @apply mt-8 mb-4 text-2xl font-semibold;
+  }
+  .prose-legal h3 {
+    @apply mt-6 mb-3 text-xl font-semibold;
+  }
+  .prose-legal p {
+    @apply mb-4 leading-relaxed;
+  }
+  .prose-legal ul {
+    @apply list-disc pl-6 mb-4;
+  }
+  .prose-legal li {
+    @apply mb-2;
+  }
+}

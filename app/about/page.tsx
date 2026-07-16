@@ -91,22 +91,6 @@ export default function AboutPage() {
 
             <article className="hud-panel p-6">
               <div className="mb-3 h-1 w-12 bg-cyan" />
-              <h2 className="font-display text-2xl font-bold text-white">Support the Tool</h2>
-              <p className="leading-relaxed text-ink">
-                The calculator is free to use. If you want to help cover domain and maintenance costs, you can buy us a coffee. Supporters do not unlock extra features — the core tool stays free for everyone.
-              </p>
-              <a
-                href="https://ko-fi.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded bg-amber/20 px-5 py-3 font-semibold text-amber transition-all hover:bg-amber/30 hover:shadow-[0_0_16px_rgba(255,184,0,0.35)]"
-              >
-                Buy Us a Coffee
-              </a>
-            </article>
-
-            <article className="hud-panel p-6">
-              <div className="mb-3 h-1 w-12 bg-cyan" />
               <h2 className="font-display text-2xl font-bold text-white">Contact</h2>
               <p className="leading-relaxed text-ink">
                 Questions or feedback? Reach us at{' '}

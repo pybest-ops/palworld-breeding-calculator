@@ -14,7 +14,7 @@ export default function VideoBackground() {
       >
         <source src="/videos/hero-bg.mp4" type="video/mp4" />
       </video>
-      <div className="absolute inset-0 bg-void/85" />
+      <div className="absolute inset-0 bg-void/80" />
       <div className="absolute inset-0 bg-[length:40px_40px] bg-grid-pattern opacity-40" />
       <div className="absolute inset-0 bg-gradient-to-b from-void/60 via-transparent to-void/90" />
     </div>

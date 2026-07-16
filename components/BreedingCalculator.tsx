@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import {
   loadPals,
   findChildRemote,
@@ -295,13 +296,40 @@ function Picker({
 }) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState('');
+  // Keeps the portaled dropdown aligned with the trigger button.
+  const [dropdownRect, setDropdownRect] = useState<{ left: number; top: number; width: number } | null>(null);
+  // Provides the viewport position used by the dropdown portal.
+  const buttonRef = useRef<HTMLButtonElement>(null);
   const selected = pals.find((p) => p.id === value);
   const filtered = pals.filter((p) => p.name.toLowerCase().includes(query.toLowerCase()));
+
+  // Recalculate position because the dropdown is rendered outside clipped HUD panels.
+  const updateDropdownRect = () => {
+    const rect = buttonRef.current?.getBoundingClientRect();
+    if (!rect) {
+      setDropdownRect(null);
+      return;
+    }
+    setDropdownRect({ left: rect.left, top: rect.bottom, width: rect.width });
+  };
+
+  useEffect(() => {
+    if (!open) return;
+
+    updateDropdownRect();
+    window.addEventListener('resize', updateDropdownRect);
+    window.addEventListener('scroll', updateDropdownRect, true);
+    return () => {
+      window.removeEventListener('resize', updateDropdownRect);
+      window.removeEventListener('scroll', updateDropdownRect, true);
+    };
+  }, [open]);
 
   return (
     <div className="relative">
       <label className="mb-2 block text-sm font-semibold text-cyan-dim uppercase tracking-wider">{label}</label>
       <button
+        ref={buttonRef}
         type="button"
         onClick={() => setOpen(!open)}
         className="hud-input flex w-full items-center justify-between text-left"
@@ -319,8 +347,15 @@ function Picker({
         <span className="text-muted">{open ? '▲' : '▼'}</span>
       </button>
 
-      {open && (
-        <div className="absolute left-0 right-0 top-full z-50 mt-2 w-full hud-panel border-cyan/30">
+      {open && dropdownRect && createPortal(
+        <div
+          className="fixed z-50 hud-panel border-cyan/30"
+          style={{
+            left: dropdownRect.left,
+            top: dropdownRect.top + 8,
+            width: dropdownRect.width,
+          }}
+        >
           <div className="border-b border-cyan/10 p-2">
             <input
               type="text"
@@ -352,7 +387,8 @@ function Picker({
               <li className="px-3 py-2 text-sm text-muted">No matches.</li>
             )}
           </ul>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );

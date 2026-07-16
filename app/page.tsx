@@ -39,8 +39,7 @@ const faqItems = [
   },
   {
     question: 'Is the tool free?',
-    answer:
-      'Yes. Core features are free. Some pages may show non-intrusive ads to support maintenance.',
+    answer: 'Yes. Core features are free. Some pages may show non-intrusive ads to support maintenance.',
   },
 ];
 
@@ -103,25 +102,34 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
 
-      <section className="bg-cream px-4 pb-12 pt-10 md:px-6 md:pt-16">
+      <section className="relative overflow-hidden px-4 pb-12 pt-10 md:px-6 md:pt-16">
+        <div className="absolute inset-0 -z-10 bg-gradient-to-br from-cyan/5 via-transparent to-transparent" />
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:items-center">
           <div className="space-y-6">
-            <h1 className="font-display text-3xl font-bold leading-tight md:text-4xl">
-              Find the Perfect Breed Combo
+            <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-cyan border border-cyan/30 bg-cyan-fade"
+              style={{ clipPath: 'polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px)' }}
+            >
+              <span className="h-1.5 w-1.5 rounded-full bg-cyan animate-pulse" />
+              Unofficial Fan Tool
+            </div>
+            
+            <h1 className="font-display text-3xl font-bold leading-tight text-white md:text-5xl">
+              Find the Perfect
+              <span className="block text-cyan">Breed Combo</span>
             </h1>
-            <p className="text-lg text-stone">
+            <p className="text-lg text-muted">
               Enter two parents or search for a target Pal — see child results, combos, and breeding conditions in seconds.
             </p>
             <div className="flex flex-wrap gap-3">
               <a
                 href="#calculator"
-                className="inline-flex items-center justify-center rounded-lg bg-forest px-5 py-3 font-semibold text-white shadow-sm hover:bg-ink"
+                className="hud-btn-primary"
               >
                 Find My Combo
               </a>
               <a
                 href="/combos"
-                className="inline-flex items-center justify-center rounded-lg border border-sand bg-paper px-5 py-3 font-semibold text-forest hover:bg-mist"
+                className="hud-btn-secondary"
               >
                 Browse All Combos
               </a>
@@ -129,49 +137,61 @@ export default function HomePage() {
           </div>
 
           <div id="calculator">
-            <Suspense fallback={<div className="rounded-2xl border border-sand bg-paper p-8 text-center"><p className="text-stone">Loading calculator…</p></div>}>
+            <Suspense fallback={<div className="hud-panel p-8 text-center">
+              <p className="text-muted">Loading calculator…</p>
+            </div>}>
               <BreedingCalculator />
             </Suspense>
           </div>
         </div>
       </section>
 
-      <section className="bg-paper px-4 py-12 md:px-6">
+      <section className="px-4 py-12 md:px-6">
         <div className="mx-auto max-w-6xl">
-          <h2 className="mb-8 text-center font-display text-2xl font-bold">How It Works</h2>
+          <div className="mb-8 flex items-center gap-3">
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent to-cyan/40" />
+            <h2 className="font-display text-2xl font-bold text-white">How It Works</h2>
+            <div className="h-px flex-1 bg-gradient-to-l from-transparent to-cyan/40" />
+          </div>
+          
           <div className="grid gap-6 md:grid-cols-3">
             {[
               {
-                step: '1',
+                step: '01',
                 title: 'Select parent Pals',
                 body: 'Pick any two parents from the dropdown or search by name.',
               },
               {
-                step: '2',
+                step: '02',
                 title: 'View the result',
                 body: 'Instantly see the child Pal, breeding probability, and incubation needs.',
               },
               {
-                step: '3',
+                step: '03',
                 title: 'Share or reverse-search',
                 body: 'Copy the result URL or search for a target child to find more combos.',
               },
             ].map((card) => (
-              <div key={card.step} className="rounded-xl border border-sand bg-cream p-6">
-                <span className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-forest text-sm font-bold text-white">
+              <div key={card.step} className="hud-panel p-6">
+                <span className="mb-3 inline-block font-mono text-sm font-bold text-cyan">
                   {card.step}
                 </span>
-                <h3 className="mb-2 font-display text-xl font-semibold">{card.title}</h3>
-                <p className="text-stone">{card.body}</p>
+                <h3 className="mb-2 font-display text-xl font-semibold text-white">{card.title}</h3>
+                <p className="text-muted">{card.body}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-cream px-4 py-12 md:px-6">
+      <section className="px-4 py-12 md:px-6">
         <div className="mx-auto max-w-6xl">
-          <h2 className="mb-8 text-center font-display text-2xl font-bold">What Can You Do?</h2>
+          <div className="mb-8 flex items-center gap-3">
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent to-cyan/40" />
+            <h2 className="font-display text-2xl font-bold text-white">What Can You Do?</h2>
+            <div className="h-px flex-1 bg-gradient-to-l from-transparent to-cyan/40" />
+          </div>
+          
           <div className="grid gap-6 md:grid-cols-3">
             {[
               {
@@ -182,45 +202,58 @@ export default function HomePage() {
               {
                 title: 'Check what a random pair will produce',
                 body: 'Enter two parents and see the predicted outcome.',
-                icon: <Share2 className="text-amber" size={24} />,
+                icon: <Share2 className="text-cyan" size={24} />,
               },
               {
                 title: 'Share combos with friends',
                 body: 'Every result gets a shareable link, perfect for Discord or Reddit.',
-                icon: <Smartphone className="text-amber" size={24} />,
+                icon: <Smartphone className="text-terra" size={24} />,
               },
             ].map((card) => (
-              <div key={card.title} className="rounded-xl border border-sand bg-paper p-6">
+              <div key={card.title} className="hud-panel p-6">
                 <div className="mb-3">{card.icon}</div>
-                <h3 className="mb-2 font-display text-xl font-semibold">{card.title}</h3>
-                <p className="text-stone">{card.body}</p>
+                <h3 className="mb-2 font-display text-xl font-semibold text-white">{card.title}</h3>
+                <p className="text-muted">{card.body}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-paper px-4 py-12 md:px-6">
+      <section className="px-4 py-12 md:px-6">
         <div className="mx-auto max-w-6xl">
-          <h2 className="mb-8 text-center font-display text-2xl font-bold">Why Use This Tool?</h2>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            {[
-              'Two-way lookup — Parent-to-child and child-to-parents in one place.',
-              'Shareable results — Copy a link to any calculation.',
-              'Mobile-friendly — Built to work while you play.',
-              'Community-driven data — Updated from publicly available community research.',
-            ].map((item) => (
-              <div key={item} className="rounded-lg border border-sand bg-cream p-5">
-                <p className="text-sm">{item}</p>
-              </div>
-            ))}
+          <div className="hud-panel p-8">
+            <div className="mb-8 flex items-center gap-3">
+              <div className="h-px flex-1 bg-gradient-to-r from-transparent to-cyan/40" />
+              <h2 className="font-display text-2xl font-bold text-white">Why Use This Tool?</h2>
+              <div className="h-px flex-1 bg-gradient-to-l from-transparent to-cyan/40" />
+            </div>
+            
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+              {[
+                'Two-way lookup — Parent-to-child and child-to-parents in one place.',
+                'Shareable results — Copy a link to any calculation.',
+                'Mobile-friendly — Built to work while you play.',
+                'Community-driven data — Updated from publicly available community research.',
+              ].map((item) => (
+                <div key={item} className="hud-panel border-cyan/10 bg-cyan-fade p-5">
+                  <div className="mb-2 h-1 w-8 bg-cyan" />
+                  <p className="text-sm text-ink">{item}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-cream px-4 py-12 md:px-6">
+      <section className="px-4 py-12 md:px-6">
         <div className="mx-auto max-w-3xl">
-          <h2 className="mb-8 text-center font-display text-2xl font-bold">Frequently Asked Questions</h2>
+          <div className="mb-8 flex items-center gap-3">
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent to-cyan/40" />
+            <h2 className="font-display text-2xl font-bold text-white">Frequently Asked Questions</h2>
+            <div className="h-px flex-1 bg-gradient-to-l from-transparent to-cyan/40" />
+          </div>
+          
           <FAQ items={faqItems} />
         </div>
       </section>

@@ -30,76 +30,87 @@ export default function AboutPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
 
-      <section className="bg-cream px-4 pb-12 pt-8 md:px-6">
+      <section className="px-4 pb-12 pt-8 md:px-6">
         <div className="mx-auto max-w-3xl">
           <div className="mb-8 space-y-3">
-            <h1 className="font-display text-3xl font-bold md:text-4xl">About the Tool</h1>
-            <p className="text-lg text-stone">
+            <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-cyan border border-cyan/30 bg-cyan-fade"
+              style={{ clipPath: 'polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px)' }}
+            >
+              About
+            </div>
+            
+            <h1 className="font-display text-3xl font-bold text-white md:text-4xl">About the Tool</h1>
+            <p className="text-lg text-muted">
               A fast, free, unofficial breeding calculator for Palworld players.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
                 href="/"
-                className="inline-flex items-center justify-center rounded-lg bg-forest px-5 py-3 font-semibold text-white shadow-sm hover:bg-ink"
+                className="hud-btn-primary"
               >
                 Try the Calculator
               </Link>
               <Link
                 href="/guide"
-                className="inline-flex items-center justify-center rounded-lg border border-sand bg-paper px-5 py-3 font-semibold text-forest hover:bg-mist"
+                className="hud-btn-secondary"
               >
                 Read the Guide
               </Link>
             </div>
           </div>
 
-          <div className="prose-legal space-y-8">
-            <article className="rounded-xl border border-sand bg-paper p-6">
-              <h2>Why We Built This</h2>
-              <p>
+          <div className="space-y-6">
+            <article className="hud-panel p-6">
+              <div className="mb-3 h-1 w-12 bg-cyan" />
+              <h2 className="font-display text-2xl font-bold text-white">Why We Built This</h2>
+              <p className="leading-relaxed text-ink">
                 Palworld players need a fast way to find the right parent pairs. We built this calculator to replace slow Wiki tables and scattered Reddit threads with a clean, shareable tool that works on any device.
               </p>
             </article>
 
-            <article className="rounded-xl border border-sand bg-paper p-6">
-              <h2>Data Source and Version</h2>
-              <p>
-                The breeding data comes from publicly available community research. We do not scrape official game servers or host copyrighted game assets. The data is versioned with each site update, so you can see which game version the current dataset reflects.
+            <article className="hud-panel p-6">
+              <div className="mb-3 h-1 w-12 bg-cyan" />
+              <h2 className="font-display text-2xl font-bold text-white">Data Source and Version</h2>
+              <p className="leading-relaxed text-ink">
+                The breeding data comes from the PalCalc community dataset. We do not scrape official game servers or host copyrighted game assets. The data is versioned with each site update, so you can see which game version the current dataset reflects.
               </p>
-              <p className="font-mono text-sm text-stone">Current data version: v1.0.0 — game version TBD</p>
+              <p className="font-mono text-sm text-muted">Current data version: v2.0.0 — synced with PalCalc community data</p>
             </article>
 
-            <article className="rounded-xl border border-sand bg-paper p-6">
-              <h2>Important Disclaimer</h2>
-              <p>
+            <article className="hud-panel p-6">
+              <div className="mb-3 h-1 w-12 bg-cyan" />
+              <h2 className="font-display text-2xl font-bold text-white">Important Disclaimer</h2>
+              <p className="leading-relaxed text-ink">
                 Palworld Breeding Calculator is an unofficial, fan-made tool. It is not affiliated with, endorsed by, or sponsored by Pocketpair Inc. Palworld is a trademark of its respective owner. Breeding results are based on community data and may change with game updates. Always verify critical information in-game.
               </p>
-              <p>
-                Read our <Link href="/privacy">Privacy Policy</Link> and{' '}
-                <Link href="/terms">Terms of Use</Link>.
+              <p className="leading-relaxed text-ink">
+                Read our <Link href="/privacy" className="text-cyan hover:text-cyan-dim">Privacy Policy</Link> and{' '}
+                <Link href="/terms" className="text-cyan hover:text-cyan-dim">Terms of Use</Link>.
               </p>
             </article>
 
-            <article className="rounded-xl border border-sand bg-paper p-6">
-              <h2>Support the Tool</h2>
-              <p>
+            <article className="hud-panel p-6">
+              <div className="mb-3 h-1 w-12 bg-cyan" />
+              <h2 className="font-display text-2xl font-bold text-white">Support the Tool</h2>
+              <p className="leading-relaxed text-ink">
                 The calculator is free to use. If you want to help cover domain and maintenance costs, you can buy us a coffee. Supporters do not unlock extra features — the core tool stays free for everyone.
               </p>
               <a
                 href="https://ko-fi.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-lg bg-amber px-5 py-3 font-semibold text-white shadow-sm hover:bg-amber/90"
+                className="inline-flex items-center justify-center rounded bg-amber/20 px-5 py-3 font-semibold text-amber transition-all hover:bg-amber/30 hover:shadow-[0_0_16px_rgba(255,184,0,0.35)]"
               >
                 Buy Us a Coffee
               </a>
             </article>
 
-            <article className="rounded-xl border border-sand bg-paper p-6">
-              <h2>Contact</h2>
-              <p>
+            <article className="hud-panel p-6">
+              <div className="mb-3 h-1 w-12 bg-cyan" />
+              <h2 className="font-display text-2xl font-bold text-white">Contact</h2>
+              <p className="leading-relaxed text-ink">
                 Questions or feedback? Reach us at{' '}
-                <a href="mailto:contact@palworldbreedingcalculator.wiki">
+                <a href="mailto:contact@palworldbreedingcalculator.wiki" className="text-cyan hover:text-cyan-dim">
                   contact@palworldbreedingcalculator.wiki
                 </a>
                 .

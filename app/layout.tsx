@@ -68,7 +68,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
       </head>
-      <body className="min-h-screen bg-cream font-body text-ink antialiased">
+      <body className="min-h-screen bg-void bg-[length:40px_40px] bg-grid-pattern font-body text-ink antialiased">
+        <div className="fixed inset-0 pointer-events-none bg-gradient-to-b from-cyan/3 via-transparent to-void -z-10" />
         <Header />
         <main>{children}</main>
         <Footer />

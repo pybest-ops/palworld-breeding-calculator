@@ -12,14 +12,14 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-sand bg-cream">
-      <div className="mx-auto max-w-6xl px-4 py-8 md:px-6">
+    <footer className="border-t border-cyan/20 bg-void-light">
+      <div className="mx-auto max-w-6xl px-4 py-10 md:px-6">
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row">
           <div className="space-y-2">
-            <Link href="/" className="font-display text-lg font-bold text-forest">
-              palworldbreedingcalculator.wiki
+            <Link href="/" className="font-display text-lg font-bold text-cyan tracking-wide">
+              PALWORLD BREEDER
             </Link>
-            <p className="max-w-md text-sm text-stone">
+            <p className="max-w-md text-sm text-muted">
               A fast, free, unofficial breeding calculator for Palworld players. Built from community data.
             </p>
           </div>
@@ -29,7 +29,7 @@ export default function Footer() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm text-stone hover:text-forest"
+                className="text-sm text-muted transition-colors hover:text-cyan"
               >
                 {link.label}
               </Link>
@@ -37,9 +37,14 @@ export default function Footer() {
           </nav>
         </div>
 
-        <div className="mt-8 border-t border-sand pt-6 text-xs text-stone">
+        <div className="hud-divider my-8" />
+
+        <div className="flex flex-col items-center justify-between gap-3 text-xs text-muted-dark sm:flex-row">
           <p>
-            © 2026 palworldbreedingcalculator.wiki — Palworld Breeding Calculator is an unofficial fan tool. Palworld is a trademark of its respective owner.
+            © 2026 palworldbreedingcalculator.wiki — Unofficial fan tool. Palworld is a trademark of its respective owner.
+          </p>
+          <p className="font-mono">
+            v2.0.0
           </p>
         </div>
       </div>

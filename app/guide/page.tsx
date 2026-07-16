@@ -106,11 +106,11 @@ export default function GuidePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify([howTo, faqSchema]) }}
       />
 
-      <section className="bg-cream px-4 pb-12 pt-8 md:px-6">
+      <section className="px-4 pb-12 pt-8 md:px-6">
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[260px_1fr]">
           <aside className="hidden lg:block">
-            <div className="sticky top-24 rounded-xl border border-sand bg-paper p-5">
-              <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-stone">
+            <div className="sticky top-24 hud-panel p-5">
+              <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-cyan-dim">
                 Table of Contents
               </p>
               <ul className="space-y-2">
@@ -118,14 +118,14 @@ export default function GuidePage() {
                   <li key={s.id}>
                     <a
                       href={`#${s.id}`}
-                      className="text-sm text-stone hover:text-forest"
+                      className="text-sm text-muted transition-colors hover:text-cyan"
                     >
                       {s.title}
                     </a>
                   </li>
                 ))}
                 <li>
-                  <a href="#common-questions" className="text-sm text-stone hover:text-forest">
+                  <a href="#common-questions" className="text-sm text-muted transition-colors hover:text-cyan">
                     Common Questions
                   </a>
                 </li>
@@ -135,22 +135,28 @@ export default function GuidePage() {
 
           <div className="space-y-8">
             <div className="space-y-3">
-              <h1 className="font-display text-3xl font-bold md:text-4xl">
+              <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-cyan border border-cyan/30 bg-cyan-fade"
+                style={{ clipPath: 'polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px)' }}
+              >
+                Guide
+              </div>
+              
+              <h1 className="font-display text-3xl font-bold text-white md:text-4xl">
                 Learn How Breeding Works
               </h1>
-              <p className="text-lg text-stone">
+              <p className="text-lg text-muted">
                 A plain-English guide to breeding mechanics, parent selection, and how to get the Pals you want.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="/"
-                  className="inline-flex items-center justify-center rounded-lg bg-forest px-5 py-3 font-semibold text-white shadow-sm hover:bg-ink"
+                  className="hud-btn-primary"
                 >
                   Try the Calculator
                 </Link>
                 <Link
                   href="/combos"
-                  className="inline-flex items-center justify-center rounded-lg border border-sand bg-paper px-5 py-3 font-semibold text-forest hover:bg-mist"
+                  className="hud-btn-secondary"
                 >
                   View All Combos
                 </Link>
@@ -158,12 +164,12 @@ export default function GuidePage() {
             </div>
 
             <div className="lg:hidden">
-              <details className="rounded-xl border border-sand bg-paper p-4">
-                <summary className="cursor-pointer font-semibold">Table of Contents</summary>
+              <details className="hud-panel p-4">
+                <summary className="cursor-pointer font-semibold text-ink">Table of Contents</summary>
                 <ul className="mt-3 space-y-2">
                   {sections.map((s) => (
                     <li key={s.id}>
-                      <a href={`#${s.id}`} className="text-sm text-stone hover:text-forest">
+                      <a href={`#${s.id}`} className="text-sm text-muted transition-colors hover:text-cyan">
                         {s.title}
                       </a>
                     </li>
@@ -176,21 +182,23 @@ export default function GuidePage() {
               <article
                 key={s.id}
                 id={s.id}
-                className="rounded-xl border border-sand bg-paper p-6"
+                className="hud-panel p-6"
               >
-                <h2 className="mb-3 font-display text-2xl font-bold">{s.title}</h2>
+                <div className="mb-3 h-1 w-12 bg-cyan" />
+                <h2 className="mb-3 font-display text-2xl font-bold text-white">{s.title}</h2>
                 <p className="mb-4 leading-relaxed text-ink">{s.body}</p>
                 <Link
                   href={s.id === 'how-the-calculator-works' ? '/' : '/combos'}
-                  className="text-terra underline underline-offset-4 hover:text-forest"
+                  className="text-cyan underline underline-offset-4 hover:text-cyan-dim"
                 >
                   {s.id === 'how-the-calculator-works' ? 'Open the Calculator' : 'Find a Combo Now'}
                 </Link>
               </article>
             ))}
 
-            <article id="common-questions" className="rounded-xl border border-sand bg-paper p-6">
-              <h2 className="mb-4 font-display text-2xl font-bold">Common Questions</h2>
+            <article id="common-questions" className="hud-panel p-6">
+              <div className="mb-4 h-1 w-12 bg-cyan" />
+              <h2 className="mb-4 font-display text-2xl font-bold text-white">Common Questions</h2>
               <FAQ items={guideFaq} />
             </article>
           </div>

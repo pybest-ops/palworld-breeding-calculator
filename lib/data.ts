@@ -18,14 +18,14 @@ export interface Combo {
 }
 
 export const ELEMENT_COLORS: Record<ElementKey, string> = {
-  Neutral: 'bg-neutral text-ink',
-  Fire: 'bg-fire text-white',
-  Water: 'bg-water text-white',
-  Grass: 'bg-grass text-white',
-  Electric: 'bg-electric text-ink',
-  Ice: 'bg-ice text-ink',
-  Dark: 'bg-dark text-white',
-  Dragon: 'bg-dragon text-white',
+  Neutral: 'bg-neutral/80 text-ink',
+  Fire: 'bg-fire/80 text-white',
+  Water: 'bg-water/80 text-white',
+  Grass: 'bg-grass/80 text-white',
+  Electric: 'bg-electric/80 text-ink',
+  Ice: 'bg-ice/80 text-ink',
+  Dark: 'bg-dark/80 text-white',
+  Dragon: 'bg-dragon/80 text-white',
 };
 
 export const ELEMENT_ICONS: Record<ElementKey, string> = {

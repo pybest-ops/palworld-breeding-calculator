@@ -2,12 +2,12 @@ import { ELEMENT_COLORS, ELEMENT_ICONS, Pal } from '@/lib/data';
 import { PAL_IMAGES } from '@/lib/pal-images';
 
 export default function PalAvatar({ pal, size = 'md' }: { pal?: Pal; size?: 'sm' | 'md' | 'lg' }) {
-  if (!pal) return <div className="rounded-lg bg-mist" />;
+  if (!pal) return <div className="rounded bg-void-panel" />;
 
   const sizeClasses = {
-    sm: 'w-8 h-8 rounded-md',
-    md: 'w-12 h-12 rounded-lg',
-    lg: 'w-16 h-16 rounded-xl',
+    sm: 'w-8 h-8',
+    md: 'w-12 h-12',
+    lg: 'w-16 h-16',
   };
 
   const primary = pal.elements[0] || 'Neutral';
@@ -17,7 +17,7 @@ export default function PalAvatar({ pal, size = 'md' }: { pal?: Pal; size?: 'sm'
   if (imageUrl) {
     return (
       <div
-        className={`inline-flex items-center justify-center overflow-hidden border-2 border-white/50 shadow-sm ${sizeClasses[size]} ${colorClass}`}
+        className={`inline-flex items-center justify-center overflow-hidden border border-cyan/30 shadow-[0_0_8px_rgba(0,229,255,0.2)] ${sizeClasses[size]} ${colorClass}`}
         title={pal.name}
         aria-label={pal.name}
       >
@@ -28,7 +28,7 @@ export default function PalAvatar({ pal, size = 'md' }: { pal?: Pal; size?: 'sm'
 
   return (
     <div
-      className={`inline-flex items-center justify-center font-mono font-bold shadow-sm ${sizeClasses[size]} ${colorClass}`}
+      className={`inline-flex items-center justify-center font-mono font-bold border border-cyan/30 shadow-[0_0_8px_rgba(0,229,255,0.2)] ${sizeClasses[size]} ${colorClass}`}
       title={pal.name}
       aria-label={pal.name}
     >

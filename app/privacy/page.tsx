@@ -11,14 +11,20 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <>
-      <section className="bg-cream px-4 pb-12 pt-8 md:px-6">
+      <section className="px-4 pb-12 pt-8 md:px-6">
         <div className="mx-auto max-w-3xl">
           <div className="mb-8">
-            <h1 className="font-display text-3xl font-bold md:text-4xl">Privacy Policy</h1>
-            <p className="mt-2 text-sm text-stone">Effective date: 2026-07-15 · Last updated: 2026-07-15</p>
+            <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-cyan border border-cyan/30 bg-cyan-fade"
+              style={{ clipPath: 'polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px)' }}
+            >
+              Legal
+            </div>
+            
+            <h1 className="font-display text-3xl font-bold text-white md:text-4xl">Privacy Policy</h1>
+            <p className="mt-2 text-sm text-muted">Effective date: 2026-07-15 · Last updated: 2026-07-15</p>
           </div>
 
-          <article className="prose-legal rounded-xl border border-sand bg-paper p-6">
+          <article className="prose-legal hud-panel p-6">
             <p>
               Palworld Breeding Calculator (“we,” “us,” or “our”) operates the website{' '}
               <strong>palworldbreedingcalculator.wiki</strong> (the “Site”). This Privacy Policy explains how we collect, use, disclose, and safeguard information when you visit or use the Site.
@@ -33,7 +39,6 @@ export default function PrivacyPage() {
               We do not require users to create accounts or log in. If you choose to contact us, we may collect the email address and message content you send.
             </p>
             <h3>Information Collected Automatically</h3>
-            <p></p>
             <ul>
               <li>Usage Data — pages visited, time spent, clicks, referrer, device/browser type.</li>
               <li>Cookie / Local Storage — cookie consent preference and display settings.</li>
@@ -88,8 +93,8 @@ export default function PrivacyPage() {
           </article>
 
           <div className="mt-6 flex flex-wrap gap-4 text-sm">
-            <Link href="/terms" className="text-terra underline">Terms of Use</Link>
-            <Link href="/cookie-policy" className="text-terra underline">Cookie Policy</Link>
+            <Link href="/terms" className="text-cyan underline hover:text-cyan-dim">Terms of Use</Link>
+            <Link href="/cookie-policy" className="text-cyan underline hover:text-cyan-dim">Cookie Policy</Link>
           </div>
         </div>
       </section>

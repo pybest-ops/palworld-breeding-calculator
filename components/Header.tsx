@@ -15,26 +15,26 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-sand bg-cream/95 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-cyan/20 bg-void/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
-        <Link href="/" className="font-display text-lg font-bold text-forest hover:text-amber">
-          palworldbreedingcalculator.wiki
+        <Link href="/" className="font-display text-lg font-bold text-cyan tracking-wide hover:text-white transition-colors">
+          PALWORLD BREEDER
         </Link>
 
-        <nav className="hidden items-center gap-6 md:flex" aria-label="Main">
+        <nav className="hidden items-center gap-1 md:flex" aria-label="Main">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-ink hover:text-forest"
+              className="px-3 py-1.5 text-sm font-medium text-muted transition-colors hover:text-cyan"
             >
-              {link.label}
+              {link.label.toUpperCase()}
             </Link>
           ))}
         </nav>
 
         <button
-          className="inline-flex items-center justify-center rounded-lg p-2 md:hidden"
+          className="inline-flex items-center justify-center rounded p-2 text-cyan md:hidden hover:bg-cyan/10"
           onClick={() => setOpen((s) => !s)}
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
@@ -44,16 +44,16 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="border-b border-sand bg-paper px-4 py-3 md:hidden">
-          <nav className="flex flex-col gap-3" aria-label="Mobile">
+        <div className="border-b border-cyan/20 bg-void-light px-4 py-3 md:hidden">
+          <nav className="flex flex-col gap-1" aria-label="Mobile">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-base font-medium text-ink hover:text-forest"
+                className="px-2 py-2 text-base font-medium text-muted hover:text-cyan"
                 onClick={() => setOpen(false)}
               >
-                {link.label}
+                {link.label.toUpperCase()}
               </Link>
             ))}
           </nav>

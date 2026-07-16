@@ -11,14 +11,20 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <>
-      <section className="bg-cream px-4 pb-12 pt-8 md:px-6">
+      <section className="px-4 pb-12 pt-8 md:px-6">
         <div className="mx-auto max-w-3xl">
           <div className="mb-8">
-            <h1 className="font-display text-3xl font-bold md:text-4xl">Terms of Use</h1>
-            <p className="mt-2 text-sm text-stone">Effective date: 2026-07-15 · Last updated: 2026-07-15</p>
+            <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-cyan border border-cyan/30 bg-cyan-fade"
+              style={{ clipPath: 'polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px)' }}
+            >
+              Legal
+            </div>
+            
+            <h1 className="font-display text-3xl font-bold text-white md:text-4xl">Terms of Use</h1>
+            <p className="mt-2 text-sm text-muted">Effective date: 2026-07-15 · Last updated: 2026-07-15</p>
           </div>
 
-          <article className="prose-legal rounded-xl border border-sand bg-paper p-6">
+          <article className="prose-legal hud-panel p-6">
             <p>
               These Terms of Use (“Terms”) govern your access to and use of the website{' '}
               <strong>palworldbreedingcalculator.wiki</strong> (the “Site”). By accessing or using the Site, you agree to be bound by these Terms.
@@ -89,8 +95,8 @@ export default function TermsPage() {
           </article>
 
           <div className="mt-6 flex flex-wrap gap-4 text-sm">
-            <Link href="/privacy" className="text-terra underline">Privacy Policy</Link>
-            <Link href="/cookie-policy" className="text-terra underline">Cookie Policy</Link>
+            <Link href="/privacy" className="text-cyan underline hover:text-cyan-dim">Privacy Policy</Link>
+            <Link href="/cookie-policy" className="text-cyan underline hover:text-cyan-dim">Cookie Policy</Link>
           </div>
         </div>
       </section>

@@ -82,19 +82,19 @@ export default function ComboTable() {
 
   if (loading) {
     return (
-      <div className="rounded-xl border border-sand bg-paper p-12 text-center">
-        <p className="text-stone">Loading combo database…</p>
+      <div className="hud-panel p-12 text-center">
+        <p className="text-muted">Loading combo database…</p>
       </div>
     );
   }
 
   if (error) {
     return (
-      <div className="rounded-xl border border-terra bg-cream p-8 text-center">
+      <div className="hud-panel border-terra/40 p-8 text-center">
         <p className="font-medium text-terra">{error}</p>
         <button
           onClick={() => window.location.reload()}
-          className="mt-4 rounded-lg bg-forest px-4 py-2 text-sm font-semibold text-white hover:bg-ink"
+          className="mt-4 hud-btn-primary"
         >
           Retry
         </button>
@@ -104,9 +104,9 @@ export default function ComboTable() {
 
   return (
     <div className="space-y-4">
-      <div className="flex flex-col gap-3 rounded-xl border border-sand bg-paper p-4 md:flex-row md:items-center">
+      <div className="hud-panel flex flex-col gap-3 p-4 md:flex-row md:items-center">
         <div className="relative flex-1">
-          <Search className="absolute left-3 top-2.5 text-stone" size={18} />
+          <Search className="absolute left-3 top-2.5 text-cyan-dim" size={18} />
           <input
             type="text"
             value={query}
@@ -115,19 +115,19 @@ export default function ComboTable() {
               setPage(1);
             }}
             placeholder="Search by parent or child Pal…"
-            className="w-full rounded-lg border border-sand py-2 pl-10 pr-3 text-sm focus:border-forest focus:outline-none focus:ring-2 focus:ring-forest/30"
+            className="hud-input pl-10"
           />
         </div>
 
         <div className="flex items-center gap-2">
-          <SlidersHorizontal className="text-stone" size={18} />
+          <SlidersHorizontal className="text-cyan-dim" size={18} />
           <select
             value={elementFilter}
             onChange={(e) => {
               setElementFilter(e.target.value);
               setPage(1);
             }}
-            className="rounded-lg border border-sand bg-paper py-2 pl-3 pr-8 text-sm focus:border-forest focus:outline-none"
+            className="hud-input pr-8"
           >
             {ELEMENTS.map((e) => (
               <option key={e} value={e}>
@@ -139,7 +139,7 @@ export default function ComboTable() {
           {(query || elementFilter !== 'All') && (
             <button
               onClick={resetFilters}
-              className="inline-flex items-center gap-1 text-sm text-stone hover:text-terra"
+              className="inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-terra"
             >
               <X size={16} /> Clear
             </button>
@@ -148,41 +148,41 @@ export default function ComboTable() {
       </div>
 
       {filtered.length === 0 ? (
-        <div className="rounded-xl border border-sand bg-paper p-8 text-center text-stone">
+        <div className="hud-panel border-cyan/10 p-8 text-center text-muted">
           <p className="font-medium">No combos found.</p>
           <p className="text-sm">Try a different search term or clear the filters.</p>
           <button
             onClick={resetFilters}
-            className="mt-4 inline-flex items-center gap-1 rounded-lg bg-forest px-4 py-2 text-sm font-semibold text-white hover:bg-ink"
+            className="mt-4 hud-btn-primary"
           >
             <X size={16} /> Clear filters
           </button>
         </div>
       ) : (
         <>
-          <div className="hidden rounded-xl border border-sand bg-paper shadow md:block">
+          <div className="hidden rounded md:block">
             <table className="w-full text-left text-sm">
-              <thead className="bg-mist">
-                <tr>
-                  <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-stone">Parent 1</th>
-                  <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-stone">Parent 2</th>
-                  <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-stone">Child</th>
-                  <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-stone">Probability</th>
-                  <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-stone">Incubation</th>
-                  <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-stone">Conditions</th>
+              <thead className="bg-void-panel text-cyan-dim">
+                <tr className="border-b border-cyan/30">
+                  <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wider">Parent 1</th>
+                  <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wider">Parent 2</th>
+                  <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wider">Child</th>
+                  <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wider">Probability</th>
+                  <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wider">Incubation</th>
+                  <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wider">Conditions</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-sand">
+              <tbody className="divide-y divide-cyan/10">
                 {filtered.map((combo) => (
-                  <tr key={`${combo.parentA}-${combo.parentB}`} className="hover:bg-mist/50">
+                  <tr key={`${combo.parentA}-${combo.parentB}`} className="transition-colors hover:bg-cyan/5">
                     <Cell pals={pals} palId={combo.parentA} />
                     <Cell pals={pals} palId={combo.parentB} />
                     <Cell pals={pals} palId={combo.child} />
-                    <td className="px-4 py-3 font-mono font-semibold">
+                    <td className="px-4 py-3 font-mono font-semibold text-cyan">
                       {(combo.probability * 100).toFixed(0)}%
                     </td>
-                    <td className="px-4 py-3">{combo.incubationMinutes} min</td>
-                    <td className="px-4 py-3 text-stone">
+                    <td className="px-4 py-3 text-muted">{combo.incubationMinutes} min</td>
+                    <td className="px-4 py-3 text-muted">
                       {combo.temperature} · {combo.food}
                     </td>
                   </tr>
@@ -199,32 +199,32 @@ export default function ComboTable() {
               return (
                 <div
                   key={`${combo.parentA}-${combo.parentB}`}
-                  className="rounded-xl border border-sand bg-paper p-4"
+                  className="hud-panel border-cyan/10 p-4"
                 >
                   <div className="mb-3 flex items-center gap-2">
                     <PalAvatar pal={a} size="sm" />
-                    <span className="text-stone">+</span>
+                    <span className="text-muted">+</span>
                     <PalAvatar pal={b} size="sm" />
-                    <span className="text-stone">→</span>
+                    <span className="text-muted">→</span>
                     <PalAvatar pal={c} size="sm" />
-                    <span className="ml-auto font-display font-bold">{c.name}</span>
+                    <span className="ml-auto font-display font-bold text-ink">{c.name}</span>
                   </div>
                   <div className="grid grid-cols-2 gap-2 text-sm">
-                    <div className="rounded bg-cream p-2">
-                      <p className="text-xs text-stone">Probability</p>
-                      <p className="font-mono font-semibold">{(combo.probability * 100).toFixed(0)}%</p>
+                    <div className="hud-panel border-cyan/10 bg-cyan-fade p-2">
+                      <p className="text-xs text-muted">Probability</p>
+                      <p className="font-mono font-semibold text-cyan">{(combo.probability * 100).toFixed(0)}%</p>
                     </div>
-                    <div className="rounded bg-cream p-2">
-                      <p className="text-xs text-stone">Incubation</p>
-                      <p className="font-mono font-semibold">{combo.incubationMinutes} min</p>
+                    <div className="hud-panel border-cyan/10 bg-cyan-fade p-2">
+                      <p className="text-xs text-muted">Incubation</p>
+                      <p className="font-mono font-semibold text-cyan">{combo.incubationMinutes} min</p>
                     </div>
-                    <div className="rounded bg-cream p-2">
-                      <p className="text-xs text-stone">Temp</p>
-                      <p className="font-semibold">{combo.temperature}</p>
+                    <div className="hud-panel border-cyan/10 bg-cyan-fade p-2">
+                      <p className="text-xs text-muted">Temp</p>
+                      <p className="font-semibold text-ink">{combo.temperature}</p>
                     </div>
-                    <div className="rounded bg-cream p-2">
-                      <p className="text-xs text-stone">Food</p>
-                      <p className="font-semibold">{combo.food}</p>
+                    <div className="hud-panel border-cyan/10 bg-cyan-fade p-2">
+                      <p className="text-xs text-muted">Food</p>
+                      <p className="font-semibold text-ink">{combo.food}</p>
                     </div>
                   </div>
                 </div>
@@ -232,8 +232,8 @@ export default function ComboTable() {
             })}
           </div>
 
-          <div className="flex flex-col items-center justify-between gap-3 rounded-xl border border-sand bg-paper p-4 sm:flex-row">
-            <p className="text-sm text-stone">
+          <div className="hud-panel flex flex-col items-center justify-between gap-3 p-4 sm:flex-row">
+            <p className="text-sm text-muted">
               Showing <span className="font-semibold text-ink">{filtered.length}</span> of{' '}
               <span className="font-semibold text-ink">{index?.total ?? 0}</span> combos · Page{' '}
               <span className="font-semibold text-ink">{safePage}</span> of {totalPages}
@@ -242,14 +242,14 @@ export default function ComboTable() {
               <button
                 onClick={() => setPage((p) => Math.max(1, p - 1))}
                 disabled={safePage <= 1}
-                className="inline-flex items-center gap-1 rounded-lg border border-sand bg-cream px-3 py-2 text-sm font-semibold text-ink hover:bg-mist disabled:cursor-not-allowed disabled:opacity-40"
+                className="hud-btn-secondary px-3 py-2 text-sm disabled:cursor-not-allowed disabled:opacity-40"
               >
                 <ChevronLeft size={16} /> Prev
               </button>
               <button
                 onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
                 disabled={safePage >= totalPages}
-                className="inline-flex items-center gap-1 rounded-lg border border-sand bg-cream px-3 py-2 text-sm font-semibold text-ink hover:bg-mist disabled:cursor-not-allowed disabled:opacity-40"
+                className="hud-btn-secondary px-3 py-2 text-sm disabled:cursor-not-allowed disabled:opacity-40"
               >
                 Next <ChevronRight size={16} />
               </button>
@@ -268,7 +268,7 @@ function Cell({ pals, palId }: { pals: Pal[]; palId: string }) {
     <td className="px-4 py-3">
       <div className="flex items-center gap-2">
         <PalAvatar pal={pal} size="sm" />
-        <span className="font-medium">{pal.name}</span>
+        <span className="font-medium text-ink">{pal.name}</span>
       </div>
     </td>
   );

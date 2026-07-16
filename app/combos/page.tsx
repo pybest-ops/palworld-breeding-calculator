@@ -46,25 +46,31 @@ export default function CombosPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
 
-      <section className="bg-cream px-4 pb-12 pt-8 md:px-6">
+      <section className="px-4 pb-12 pt-8 md:px-6">
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 space-y-3">
-            <h1 className="font-display text-3xl font-bold md:text-4xl">
+            <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-cyan border border-cyan/30 bg-cyan-fade"
+              style={{ clipPath: 'polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px)' }}
+            >
+              Database
+            </div>
+            
+            <h1 className="font-display text-3xl font-bold text-white md:text-4xl">
               Discover Every Breeding Combo
             </h1>
-            <p className="text-lg text-stone">
+            <p className="text-lg text-muted">
               Search the full combo database by parent, child, or type. Find the pair that gets you the Pal you want.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
                 href="/"
-                className="inline-flex items-center justify-center rounded-lg bg-forest px-5 py-3 font-semibold text-white shadow-sm hover:bg-ink"
+                className="hud-btn-primary"
               >
                 Open the Calculator
               </Link>
               <Link
                 href="/guide"
-                className="inline-flex items-center justify-center rounded-lg border border-sand bg-paper px-5 py-3 font-semibold text-forest hover:bg-mist"
+                className="hud-btn-secondary"
               >
                 Read the Guide
               </Link>
@@ -74,7 +80,11 @@ export default function CombosPage() {
           <ComboTable />
 
           <div className="mt-12">
-            <h2 className="mb-6 font-display text-2xl font-bold">Combo FAQ</h2>
+            <div className="mb-6 flex items-center gap-3">
+              <div className="h-px flex-1 bg-gradient-to-r from-transparent to-cyan/40" />
+              <h2 className="font-display text-2xl font-bold text-white">Combo FAQ</h2>
+              <div className="h-px flex-1 bg-gradient-to-l from-transparent to-cyan/40" />
+            </div>
             <FAQ items={faqItems} />
           </div>
         </div>

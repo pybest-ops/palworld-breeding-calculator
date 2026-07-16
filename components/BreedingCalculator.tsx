@@ -136,19 +136,19 @@ export default function BreedingCalculator() {
 
   if (loading) {
     return (
-      <div className="rounded-2xl border border-sand bg-paper p-8 text-center">
-        <p className="text-stone">Loading breeding data…</p>
+      <div className="hud-panel p-8 text-center">
+        <p className="text-muted">Loading breeding data…</p>
       </div>
     );
   }
 
   if (error) {
     return (
-      <div className="rounded-2xl border border-terra bg-cream p-8 text-center">
+      <div className="hud-panel border-terra/40 p-8 text-center">
         <p className="font-medium text-terra">{error}</p>
         <button
           onClick={() => window.location.reload()}
-          className="mt-4 rounded-lg bg-forest px-4 py-2 text-sm font-semibold text-white hover:bg-ink"
+          className="mt-4 hud-btn-primary"
         >
           Retry
         </button>
@@ -157,31 +157,31 @@ export default function BreedingCalculator() {
   }
 
   return (
-    <div className="rounded-2xl border border-sand bg-paper p-6 shadow-sm md:p-8">
+    <div className="hud-panel p-6 shadow-cyan-glow md:p-8">
       <div className="mb-6 flex flex-wrap gap-2">
         <button
           onClick={() => { setMode('parents'); reset(); }}
-          className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
+          className={`px-4 py-2 text-sm font-semibold transition-all ${
             mode === 'parents'
-              ? 'bg-forest text-white'
-              : 'border border-sand bg-cream text-ink hover:bg-mist'
+              ? 'hud-btn-primary'
+              : 'hud-btn-ghost'
           }`}
         >
           Parents → Child
         </button>
         <button
           onClick={() => { setMode('child'); reset(); }}
-          className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
+          className={`px-4 py-2 text-sm font-semibold transition-all ${
             mode === 'child'
-              ? 'bg-forest text-white'
-              : 'border border-sand bg-cream text-ink hover:bg-mist'
+              ? 'hud-btn-primary'
+              : 'hud-btn-ghost'
           }`}
         >
           Child → Parents
         </button>
         <button
           onClick={reset}
-          className="ml-auto inline-flex items-center gap-1 rounded-lg border border-sand bg-cream px-3 py-2 text-sm font-semibold text-stone hover:bg-mist"
+          className="ml-auto inline-flex items-center gap-1 text-sm font-semibold text-muted transition-colors hover:text-cyan"
         >
           <RotateCcw size={16} /> Reset
         </button>
@@ -211,14 +211,14 @@ export default function BreedingCalculator() {
           </div>
 
           {resultLoading ? (
-            <div className="rounded-xl border border-sand bg-cream p-6 text-center">
-              <p className="text-stone">Looking up combo…</p>
+            <div className="hud-panel bg-cyan-fade p-6 text-center">
+              <p className="text-muted">Looking up combo…</p>
             </div>
           ) : result ? (
             <ResultCard combo={result} pals={pals} />
           ) : parentA && parentB ? (
-            <div className="rounded-xl border border-sand bg-cream p-6 text-center">
-              <p className="font-medium text-stone">No known combo for this pair.</p>
+            <div className="hud-panel border-cyan/10 bg-cyan-fade p-6 text-center">
+              <p className="font-medium text-muted">No known combo for this pair.</p>
             </div>
           ) : null}
         </div>
@@ -235,36 +235,36 @@ export default function BreedingCalculator() {
           />
 
           {resultLoading ? (
-            <div className="rounded-xl border border-sand bg-cream p-6 text-center">
-              <p className="text-stone">Looking up parents…</p>
+            <div className="hud-panel bg-cyan-fade p-6 text-center">
+              <p className="text-muted">Looking up parents…</p>
             </div>
           ) : child && parentResults.length > 0 ? (
-            <div className="rounded-xl border border-sand bg-cream p-4">
-              <div className="mb-3 flex items-center gap-2">
+            <div className="hud-panel p-4">
+              <div className="mb-3 flex items-center gap-3">
                 <PalAvatar pal={selectedC} size="lg" />
                 <div>
-                  <p className="font-display text-xl font-bold">{selectedC?.name}</p>
-                  <p className="text-sm text-stone">Found {parentResults.length} compatible parent pair{parentResults.length === 1 ? '' : 's'}:</p>
+                  <p className="font-display text-xl font-bold text-ink">{selectedC?.name}</p>
+                  <p className="text-sm text-muted">Found {parentResults.length} compatible parent pair{parentResults.length === 1 ? '' : 's'}:</p>
                 </div>
               </div>
               <div className="grid gap-3 sm:grid-cols-2">
                 {parentResults.map((combo) => (
-                  <div key={`${combo.parentA}-${combo.parentB}`} className="rounded-lg bg-paper p-3">
+                  <div key={`${combo.parentA}-${combo.parentB}`} className="hud-panel border-cyan/10 bg-cyan-fade p-3">
                     <div className="flex items-center gap-2">
                       <PalAvatar pal={palById(pals, combo.parentA)} size="sm" />
-                      <span className="font-medium">{palById(pals, combo.parentA)?.name}</span>
-                      <span className="text-stone">+</span>
+                      <span className="font-medium text-ink">{palById(pals, combo.parentA)?.name}</span>
+                      <span className="text-muted">+</span>
                       <PalAvatar pal={palById(pals, combo.parentB)} size="sm" />
-                      <span className="font-medium">{palById(pals, combo.parentB)?.name}</span>
+                      <span className="font-medium text-ink">{palById(pals, combo.parentB)?.name}</span>
                     </div>
-                    <p className="mt-2 font-mono text-sm font-semibold">{(combo.probability * 100).toFixed(0)}%</p>
+                    <p className="mt-2 font-mono text-sm font-semibold text-cyan">{(combo.probability * 100).toFixed(0)}%</p>
                   </div>
                 ))}
               </div>
             </div>
           ) : child ? (
-            <div className="rounded-xl border border-sand bg-cream p-6 text-center">
-              <p className="font-medium text-stone">No compatible parent pairs found in the current dataset.</p>
+            <div className="hud-panel border-cyan/10 bg-cyan-fade p-6 text-center">
+              <p className="font-medium text-muted">No compatible parent pairs found in the current dataset.</p>
             </div>
           ) : null}
         </div>
@@ -273,7 +273,7 @@ export default function BreedingCalculator() {
       {(parentA || parentB || child) && (
         <button
           onClick={share}
-          className="mt-6 inline-flex items-center gap-2 rounded-lg bg-forest px-5 py-3 font-semibold text-white hover:bg-ink"
+          className="mt-6 inline-flex items-center gap-2 hud-btn-primary"
         >
           <Share2 size={18} /> Share this result
         </button>
@@ -300,34 +300,34 @@ function Picker({
 
   return (
     <div className="relative">
-      <label className="mb-2 block text-sm font-semibold text-ink">{label}</label>
+      <label className="mb-2 block text-sm font-semibold text-cyan-dim uppercase tracking-wider">{label}</label>
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        className="flex w-full items-center justify-between rounded-lg border border-sand bg-cream px-3 py-2.5 text-left hover:border-forest focus:border-forest focus:outline-none focus:ring-2 focus:ring-forest/30"
+        className="hud-input flex w-full items-center justify-between text-left"
       >
         <span className="flex items-center gap-2">
           {selected ? (
             <>
               <PalAvatar pal={selected} size="sm" />
-              <span className="font-medium">{selected.name}</span>
+              <span className="font-medium text-ink">{selected.name}</span>
             </>
           ) : (
-            <span className="text-stone">Select a Pal…</span>
+            <span className="text-muted-dark">Select a Pal…</span>
           )}
         </span>
-        <span className="text-stone">{open ? '▲' : '▼'}</span>
+        <span className="text-muted">{open ? '▲' : '▼'}</span>
       </button>
 
       {open && (
-        <div className="absolute z-20 mt-2 w-full rounded-lg border border-sand bg-paper shadow-lg">
-          <div className="border-b border-sand p-2">
+        <div className="absolute z-20 mt-2 w-full hud-panel border-cyan/30">
+          <div className="border-b border-cyan/10 p-2">
             <input
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search Pals…"
-              className="w-full rounded-md border border-sand px-3 py-2 text-sm focus:border-forest focus:outline-none focus:ring-2 focus:ring-forest/30"
+              className="hud-input"
               autoFocus
             />
           </div>
@@ -341,15 +341,15 @@ function Picker({
                     setOpen(false);
                     setQuery('');
                   }}
-                  className="flex w-full items-center gap-2 px-3 py-2 text-left hover:bg-mist"
+                  className="flex w-full items-center gap-2 px-3 py-2 text-left transition-colors hover:bg-cyan/10"
                 >
                   <PalAvatar pal={pal} size="sm" />
-                  <span className="text-sm font-medium">{pal.name}</span>
+                  <span className="text-sm font-medium text-ink">{pal.name}</span>
                 </button>
               </li>
             ))}
             {filtered.length === 0 && (
-              <li className="px-3 py-2 text-sm text-stone">No matches.</li>
+              <li className="px-3 py-2 text-sm text-muted">No matches.</li>
             )}
           </ul>
         </div>
@@ -364,30 +364,30 @@ function ResultCard({ combo, pals }: { combo: Combo; pals: Pal[] }) {
   const c = palById(pals, combo.child);
 
   return (
-    <div className="rounded-xl border border-sand bg-cream p-4">
-      <div className="mb-3 flex items-center gap-3">
+    <div className="hud-panel border-cyan/30 p-4">
+      <div className="mb-3 flex flex-wrap items-center gap-3">
         <PalAvatar pal={a} size="md" />
-        <span className="text-stone">+</span>
+        <span className="text-muted">+</span>
         <PalAvatar pal={b} size="md" />
-        <ArrowRightLeft className="text-stone" size={20} />
+        <ArrowRightLeft className="text-cyan" size={20} />
         <PalAvatar pal={c} size="lg" />
       </div>
       <div className="grid gap-3 sm:grid-cols-3">
-        <div className="rounded-lg bg-paper p-3">
-          <p className="text-xs text-stone">Child</p>
-          <p className="font-display text-lg font-bold">{c?.name}</p>
+        <div className="hud-panel border-cyan/10 bg-cyan-fade p-3">
+          <p className="text-xs text-muted uppercase tracking-wider">Child</p>
+          <p className="font-display text-lg font-bold text-ink">{c?.name}</p>
         </div>
-        <div className="rounded-lg bg-paper p-3">
-          <p className="text-xs text-stone">Probability</p>
-          <p className="font-mono text-lg font-bold">{(combo.probability * 100).toFixed(0)}%</p>
+        <div className="hud-panel border-cyan/10 bg-cyan-fade p-3">
+          <p className="text-xs text-muted uppercase tracking-wider">Probability</p>
+          <p className="font-mono text-lg font-bold text-cyan">{(combo.probability * 100).toFixed(0)}%</p>
         </div>
-        <div className="rounded-lg bg-paper p-3">
-          <p className="text-xs text-stone">Incubation</p>
-          <p className="font-mono text-lg font-bold">{combo.incubationMinutes} min</p>
+        <div className="hud-panel border-cyan/10 bg-cyan-fade p-3">
+          <p className="text-xs text-muted uppercase tracking-wider">Incubation</p>
+          <p className="font-mono text-lg font-bold text-cyan">{combo.incubationMinutes} min</p>
         </div>
       </div>
-      <div className="mt-3 text-sm text-stone">
-        Conditions: {combo.temperature} · {combo.food}
+      <div className="mt-3 text-sm text-muted">
+        <span className="text-cyan-dim">Conditions:</span> {combo.temperature} · {combo.food}
       </div>
     </div>
   );

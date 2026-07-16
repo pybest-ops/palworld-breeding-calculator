@@ -320,42 +320,38 @@ function Picker({
       </button>
 
       {open && (
-        <div className="fixed inset-0 z-40 bg-black/50 sm:absolute sm:inset-auto sm:mt-2 sm:w-full" onClick={() => setOpen(false)}>
-          <div className="absolute left-1/2 top-1/2 w-11/12 max-w-md -translate-x-1/2 -translate-y-1/2 sm:relative sm:left-auto sm:top-auto sm:w-full sm:translate-x-0 sm:translate-y-0">
-            <div className="w-full hud-panel border-cyan/30" onClick={(e) => e.stopPropagation()}>
-              <div className="border-b border-cyan/10 p-2">
-                <input
-                  type="text"
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
-                  placeholder="Search Pals…"
-                  className="hud-input"
-                  autoFocus
-                />
-              </div>
-              <ul className="max-h-60 overflow-auto py-1">
-                {filtered.map((pal) => (
-                  <li key={pal.id}>
-                    <button
-                      type="button"
-                      onClick={() => {
-                        onSelect(pal.id);
-                        setOpen(false);
-                        setQuery('');
-                      }}
-                      className="flex w-full items-center gap-2 px-3 py-2 text-left transition-colors hover:bg-cyan/10"
-                    >
-                      <PalAvatar pal={pal} size="sm" />
-                      <span className="text-sm font-medium text-ink">{pal.name}</span>
-                    </button>
-                  </li>
-                ))}
-                {filtered.length === 0 && (
-                  <li className="px-3 py-2 text-sm text-muted">No matches.</li>
-                )}
-              </ul>
-            </div>
+        <div className="absolute left-0 right-0 top-full z-50 mt-2 w-full hud-panel border-cyan/30">
+          <div className="border-b border-cyan/10 p-2">
+            <input
+              type="text"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Search Pals…"
+              className="hud-input"
+              autoFocus
+            />
           </div>
+          <ul className="max-h-60 overflow-auto py-1">
+            {filtered.map((pal) => (
+              <li key={pal.id}>
+                <button
+                  type="button"
+                  onClick={() => {
+                    onSelect(pal.id);
+                    setOpen(false);
+                    setQuery('');
+                  }}
+                  className="flex w-full items-center gap-2 px-3 py-2 text-left transition-colors hover:bg-cyan/10"
+                >
+                  <PalAvatar pal={pal} size="sm" />
+                  <span className="text-sm font-medium text-ink">{pal.name}</span>
+                </button>
+              </li>
+            ))}
+            {filtered.length === 0 && (
+              <li className="px-3 py-2 text-sm text-muted">No matches.</li>
+            )}
+          </ul>
         </div>
       )}
     </div>

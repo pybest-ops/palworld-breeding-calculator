@@ -4,6 +4,7 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
+import VideoBackground from '@/components/VideoBackground';
 
 const space = Space_Grotesk({
   subsets: ['latin'],
@@ -68,8 +69,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
       </head>
-      <body className="min-h-screen bg-void bg-[length:40px_40px] bg-grid-pattern font-body text-ink antialiased">
-        <div className="fixed inset-0 pointer-events-none bg-gradient-to-b from-cyan/3 via-transparent to-void -z-10" />
+      <body className="min-h-screen bg-void font-body text-ink antialiased">
+        <VideoBackground />
         <Header />
         <main>{children}</main>
         <Footer />

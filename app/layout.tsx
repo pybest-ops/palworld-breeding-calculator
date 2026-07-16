@@ -33,6 +33,12 @@ export const metadata: Metadata = {
   },
   description:
     'Free Palworld breeding calculator. Enter two parents or search for a target Pal to see child results, combos, and breeding conditions.',
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+    shortcut: '/favicon.ico',
+  },
+  manifest: '/manifest.json',
   openGraph: {
     type: 'website',
     locale: 'en_US',

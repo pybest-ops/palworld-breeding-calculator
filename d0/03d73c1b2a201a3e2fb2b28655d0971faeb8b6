@@ -1,0 +1,19 @@
+components/BreedingCalculator.tsx
+  s_ad7cc11ad1e2d2::t_7d4cf4d7b975d1 3-4,299-302,306-327,332,350-358,390-391
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "d003d73c1b2a201a3e2fb2b28655d0971faeb8b6",
+  "prompts": {},
+  "sessions": {
+    "s_ad7cc11ad1e2d2": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f6aa9-0a17-7ab0-a24b-0b811a932c02",
+        "model": "gpt-5.5"
+      },
+      "human_author": "muyun <muyun@tsign.cn>"
+    }
+  }
+}

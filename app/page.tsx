@@ -102,7 +102,7 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
 
-      <section className="relative overflow-hidden px-4 pb-12 pt-10 md:px-6 md:pt-16">
+      <section className="relative px-4 pb-12 pt-10 md:px-6 md:pt-16">
         <div className="absolute inset-0 -z-10 bg-gradient-to-br from-cyan/5 via-transparent to-transparent" />
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:items-center">
           <div className="space-y-6">
